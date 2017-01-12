@@ -1,5 +1,7 @@
 var express = require('express'),
 	fs = require('fs'),
+	multer = require('multer'),
+	upload = multer(),
 	app = new express(),
 	port = process.env.PORT || 3000;
 
@@ -13,16 +15,9 @@ app.get('/', function(req, res) {
 	});
 });
 
-app.get('/:date', function(req, res) {
-	function dateStringify(dateObj) {
-		var months = 'January,February,March,April,May,June,July,August,September,October,November,December'.split(',');
-		return `${months[dateObj.getMonth()]} ${dateObj.getDate()}, ${dateObj.getFullYear()}`
-	}
-	var date = req.params.date,
-		time;
-	time = new Date(isNaN(+date) ? date : +date);
-	if(time.toString() === 'Invalid Date') res.json({"unix": null, "natural": null});
-	else res.json({"unix": +time, "natural": dateStringify(time)});
+app.post('/getFileSize', upload.single('file'), function(req, res) {
+	var size = req.file && req.file.size;
+	res.json(typeof size == 'undefined' ? {error: 'no file!'} : {size: req.file.size});
 });
 
 app.get('*', function(req, res) {

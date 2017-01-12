@@ -1,7 +1,7 @@
 {
-  "name": "Timestamp Microservice",
-  "description": "A API for Timestamp Microservice",
-  "repository": "https://github.com/YuyangGong/TimestampMicroservice",
+  "name": "File Metadata Microservice",
+  "description": "A API for File Metadata Microservice",
+  "repository": "https://github.com/YuyangGong/FileMetadata",
   "logo": "",
   "keywords": ["node", "express", "API"],
   "image": ""

@@ -1,23 +1,25 @@
 {
-  "name": "TimestampMicroservice",
+  "name": "FileMetadataMicroservice",
   "version": "1.0.0",
-  "description": "A simple API Server for timestamp and readable time form.",
+  "description": "A simple API Server for File Metadata",
   "main": "index.js",
   "scripts": {
+    "start": "node index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/YuyangGong/TimestampMicroservice.git"
+    "url": "git+https://github.com/YuyangGong/FileMetadata.git"
   },
   "keywords": [],
   "author": "Yuyang <421736079@qq.com>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/YuyangGong/TimestampMicroservice/issues"
+    "url": "https://github.com/YuyangGong/FileMetadata/issues"
   },
-  "homepage": "https://github.com/YuyangGong/TimestampMicroservice#readme",
+  "homepage": "https://github.com/YuyangGong/FileMetadata#readme",
   "dependencies": {
-    "express": "^4.14.0"
+    "express": "^4.14.0",
+    "multer": "^1.2.1"
   }
 }

@@ -1,0 +1,23 @@
+{
+  "name": "TimestampMicroservice",
+  "version": "1.0.0",
+  "description": "A simple API Server for timestamp and readable time form.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/YuyangGong/TimestampMicroservice.git"
+  },
+  "keywords": [],
+  "author": "Yuyang <421736079@qq.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/YuyangGong/TimestampMicroservice/issues"
+  },
+  "homepage": "https://github.com/YuyangGong/TimestampMicroservice#readme",
+  "dependencies": {
+    "express": "^4.14.0"
+  }
+}
